@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Untitled</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome do Cantor - Letras de Músicas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>André Komp</h1>
+        <p>Bem-vindo ao site oficial de <strong>André Komp</strong>! Confira as letras de todas as músicas.</p>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#letras">Letras</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Lançamento recente</h2>
+        <p>Confira a nova música: <strong>"Título da Música"</strong></p>
+    </section>
+
+    <section id="letras">
+        <h2>Letras de Músicas</h2>
+        <div class="musica" onclick="toggleLetra('letra1')">
+            <h3>Título da Música 1</h3>
+            <p class="letra" id="letra1">Aqui vai a letra da música 1...</p>
+        </div>  
+        <div class="musica" onclick="toggleLetra('letra2')">
+            <h3>Título da Música 2</h3>
+            <p class="letra" id="letra2">Aqui vai a letra da música 2...</p>
+        </div>
+    </section><section id="galeria">
+    <h2>Galeria de Fotos</h2>
+    <div class="galeria-fotos">
+        <img src="https://lh3.googleusercontent.com/pw/AP1GczPvDpEQYUssqM9fM0TquLcZJFsffWa4HNpcWNxqABnXC8x4LmULWuIsC1bmCnrE9D6MHNDMDaJPN9fxErUWJCZzkZ_mwmDh7wf2BBcUdKopCcWz0LmnXQFF5CeoGLkorEcJcx1uy9Ps_zreSt7atB3c7Q=w607-h607-s-no-gm?authuser=0" alt="Foto 1" onclick="expandirImagem(this)">
+        <img src="https://lh3.googleusercontent.com/pw/AP1GczNTZu6ijUjySZ6uVt_h7Mh7qrVHG2PLbBldL3vgy8-7PXWjkOnqd6lk6dFHKoCR75bciVB7Kt-NUMF-FiCJ2P4h2J3vkkwEKcDgMXfhvFa884C-NshHoEBRDCDpYUb2oT7BbBSd6_UuyvZ_B6J5o4hkKg=w607-h607-s-no-gm?authuser=0" alt="Foto 2" onclick="expandirImagem(this)">
+        <img src="https://lh3.googleusercontent.com/pw/AP1GczMm52-Kr6cz8FsVrffY2PZ3wKiSoGaC5RB-xhPPWeYthuSqLpBVFACMSZ7CwGA7wyhY4prV8K8n7-UflsOOzbkAPWESafVRadmUhHblLINn3KbUvQlHEKFy4Oz9JUv4rZTh2eSDkMcApL4fGDS_Yhl6cQ=w660-h607-s-no-gm?authuser=0" alt="Foto 3" onclick="expandirImagem(this)">
+        <!-- Adicione quantas fotos precisar -->
+    </div>
+</section>
+
+<!-- Modal para exibir imagens em tamanho maior -->
+<div id="modal" class="modal" onclick="fecharModal()">
+    <span class="fechar">&times;</span>
+    <img class="modal-conteudo" id="img-ampliada">
+</div>
+
+
+    <section id="sobre">
+        <h2>Sobre o Cantor</h2>
+        <p>Desde a infância, a música sempre foi uma expressão natural em minha vida. Ainda pequeno, compus minhas primeiras melodias e letras, mas foi aos 15 anos que iniciei minha jornada profissional ao formar a dupla André e Luciano com meu amigo e parceiro Ezaqueu. Juntos, buscamos transmitir uma mensagem de fé e esperança, e lançamos um CD com canções que ressoaram com nosso público e marcaram nossa carreira.
+
+Com o passar dos anos, nossos caminhos seguiram direções diferentes, e a dupla chegou ao fim. No entanto, minha paixão pela composição e pelo evangelho permaneceu firme. Continuei escrevendo músicas, guiado pelo desejo de compartilhar mensagens que tocassem o coração e fortalecessem a fé das pessoas.
+
+Hoje, dedico minha vida a criar músicas que refletem minha caminhada com Deus e que possam inspirar e edificar a vida de outros. Cada canção é um testemunho, uma forma de celebrar o amor de Deus e a esperança que encontramos n’Ele..</p>
+    </section>
+
+   <section id="contato">
+    <h2>Contato</h2>
+    
+    <a href="https://wa.me/17996457466" target="_blank" class="whatsapp-link">Converse no WhatsApp</a>
+</section>
+
+
+    <footer>
+        <p>&copy; 2024 André Komp. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
